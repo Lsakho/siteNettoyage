@@ -1,0 +1,46 @@
+/* Ajoutez ces styles pour déplacer le menu à gauche */
+@media (min-width: 992px) {
+    .navbar-nav {
+        margin-right: auto;
+    }
+}
+
+/* Ajoutez ces styles pour réduire la taille de l'image */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; Set the height of the container to 100% of the viewport height */
+  }
+  
+  .img-logo {
+    width: 50%;
+    height: 30%;
+  }
+  
+  .img-logoContact {
+    margin-top: 25px;
+    width: 50%;
+    height: 30%;
+  }
+  /* .headerContact {
+    display: flex;
+    justify-content: space-between; left: auto;
+    align-items: center;
+} */
+
+/* .img-logoContact {
+    margin-bottom: 20px;
+    max-width: 60%;
+    width: 50%;
+    height: auto;
+} */
+
+.text { font-family: 'Times New Roman', Times, serif;
+    margin-top: 50px;
+    font-size: larger;
+    font-size: 25px;
+    text-align: left;
+    margin-right: 35px;
+    margin-left: 15px;
+}
