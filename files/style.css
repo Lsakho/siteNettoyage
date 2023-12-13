@@ -4,6 +4,27 @@
         margin-right: auto;
     }
 }
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+.nav-link:hover {
+  color: #ff6600; /* Changez la couleur au survol */
+}
+
+.img-fluid:hover {
+  transform: scale(1.1); /* Agrandissement au survol */
+}
+.texte {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+h1, h2, h3 {
+  color: #333; /* Couleur du texte */
+}
+
 
 /* Ajoutez ces styles pour réduire la taille de l'image */
 .header {
