@@ -8,23 +8,36 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" />
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next@21.6.10/dist/umd/i18next.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-<body>
-    <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container">
-                <div class="navbar-collapse">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        <a class="nav-link" href="./files/contact.html">Contact</a>
-                    </div>
-                </div>
+<body class="mybody">
+    <header class="container">
+        <div class="page-header">
+            <div class="logo">
+                <a href="/index.html">Seck Service Nettoyage</a>
             </div>
-        </nav>
-    </div>
+            <input type="checkbox" id="click">
+
+            <label for="click" class="mainicon">
+                <div class="menu">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </label>
+            <ul>
+                <li><a href="./files/about.html" >À Propos</a></li>
+                <!-- <li><a href="./actualite.html">Actualité</a></li> -->
+                <li><a href="./files/contact.html">Contact</a></li>
+
+                <!-- <li><a href="./www/contact.php">Contact</a></li> -->
+
+            </ul>
+           
+        </div>
+    </header>
 
     <div class="header">
-        <img src="./image/logo.png" class="img-fluid img-logo" alt="Name_of_the_company">
+        <img  src="./image/logo.png" class="img-fluid img-logo" alt="Name_of_the_company">
     </div>
 
     <div class="container">
@@ -37,7 +50,12 @@
             Nous utilisons des produits et des techniques de nettoyage de pointe pour garantir que vos espaces soient toujours propres et hygiéniques. <br> Nous pouvons également vous proposer des services supplémentaires, tels que le nettoyage à sec, le lavage des vitres ou la désinfection.
 
             Nos équipes de nettoyage sont expérimentées et qualifiées. Elles sont formées aux dernières techniques de nettoyage et elles sont équipées du matériel nécessaire pour effectuer un travail de qualité.
-
+            <h2>Horaire:</h2>
+            <strong>Ouvert:</strong><br>
+            Lundi-vendredi: 07H-18h <br>
+            Samedi: 7h-12h <br>
+            <strong>Fermé</strong><br>
+            Dimanche
         </p>
         <h2>
             Nos Services:
@@ -45,7 +63,7 @@
         <br>
         <div class="row">
             <div class="col-md-6 mb-4">
-                <img src="./image/nettoyage_de_bureau.png" class="img-fluid" alt="nettoyage_de_bureau">
+                <img  src="./image/nettoyage1.png" class="img-fluid" alt="nettoyage_de_bureau">
             </div>
             <div class="col-md-6 mb-4">
                 <p class="texte">
@@ -68,11 +86,11 @@
                 </p>
             </div>
             <div class="col-md-6 mb-4">
-                <img src="./image/interior-cleaning-team (2).png" class="img-fluid" alt="nettoyage_de_maisonAppartement">
+                <img  src="./image/image4.jpg" class="img-fluid"  alt="nettoyage_de_maisonAppartement">
             </div>
         </div>
         <br>
-        <div class="row">
+        <div class="row">    
             <div class="col-md-6 mb-4">
                 <p class="texte">
                     <h3> Nettoyage de bâtiments à Genève : Une solution complète pour tous vos besoins </h3>
@@ -84,13 +102,13 @@
                 </p>
             </div>
             <div class="col-md-6 mb-4">
-                <img src="./image/window-cleaner.png" class="img-fluid" alt="nettoyage_de_batiment">
+                <img  src="./image/window-cleaner.png" class="img-fluid" alt="nettoyage_de_batiment">
             </div>
         </div>
         <br>
         <div class="row">
             <div class="col-md-6 mb-4">
-                <img src="./image/cleaning-team.png" class="img-fluid" alt="nettoyage_de_jardin">
+                <img  src="./image/cleaningJardin.png" class="img-fluid" alt="nettoyage_de_jardin">
             </div>
             <div class="col-md-6 mb-4">
                 <p class="texte">
