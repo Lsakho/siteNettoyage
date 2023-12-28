@@ -526,3 +526,6 @@ footer {
   opacity: 1;
   transform: translateY(0);
 }
+#map {
+  height: 400px; /* Ajustez la hauteur selon vos besoins */
+}

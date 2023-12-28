@@ -1,25 +1,11 @@
-document.addEventListener("DOMContentLoaded", function() {
-    var fadeImages = document.querySelectorAll(".img-fluid");
+// Initialiser la carte Leaflet
+        let mymap = L.map('map').setView([ 46.17877,6.12120], 13);
 
-    function isElementInViewport(el) {
-        var rect = el.getBoundingClientRect();
-        return (
-            rect.top >= 0 &&
-            rect.left >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-        );
-    }
+        // Ajouter une tuile (layer) de carte OpenStreetMap
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(mymap);
 
-    function handleScroll() {
-        fadeImages.forEach(function(fadeImage) {
-            if (isElementInViewport(fadeImage) && !fadeImage.classList.contains("visible")) {
-                fadeImage.classList.add("visible");
-            }
-        });
-    }
-
-    window.addEventListener("scroll", handleScroll);
-
-    handleScroll(); // Appeler la fonction au chargement de la page
-});
+        // Ajouter un marqueur à la carte
+        L.marker([46.17887,6.12119]).addTo(mymap)
+            .bindPopup('Hello, this is a Leaflet map marker.');
