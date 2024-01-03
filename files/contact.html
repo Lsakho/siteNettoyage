@@ -1,84 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Seck_service_nettoyage_Contact</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/i18next@21.6.10/dist/umd/i18next.min.js"></script>
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-        <link rel="stylesheet" href="../files/style.css">
-    </head>
-    <body class="mybody">
-        <header class="container">
-            <div class="page-header">
-                <div class="logo">
-                    <a href="../index.html">Seck Service Nettoyage</a>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="_LgUFurLpqLKJHqjGbubu_t_9K2f5_azR6qBJdrwTMo" />
+    <title>Seck_service_nettoyage</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next@21.6.10/dist/umd/i18next.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body class="mybody">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-whiteSmoke">
+            <div class="container-fluid">
+                <!-- Logo à gauche -->
+                <a class="navbar-brand" href="../index.html" style="font-weight: bold; font-size: 24px;">Seck Service
+                    Nettoyage</a>
+
+                <!-- Toggle button pour les petits écrans -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Liens À Propos et Contact à droite -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="display: flex; align-items: center;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./about.html"
+                                style="font-size: 18px;">À Propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html" style="font-size: 18px;">Contact</a>
+                        </li>
+                    </ul>
                 </div>
-                <input type="checkbox" id="click">
-    
-                <label for="click" class="mainicon">
-                    <div class="menu">
-                        <i class='bx bx-menu'></i>
-                    </div>
-                </label>
-                <ul>
-                    <li><a href="./about.html" >À Propos</a></li>
-                    <!-- <li><a href="./actualite.html">Actualité</a></li> -->
-                    <li><a href="./contact.html">Contact</a></li>
-    
-                </ul>
-               
             </div>
-        </header>
-        <div class="row">
-            <div class="col-md-6 mb-4">
-                <img src="../image/logo.png" class="img-fluid" alt="Name_of_the_company">
-            </div>
-            <div class="col-md-6 mb-4">
-                <p class="text">
-                    Bienvenue chez Seck Nettoyage Service, votre partenaire dédié au nettoyage professionnel ! Nous vous proposons une variété de services de nettoyage adaptés tant aux particuliers qu'aux entreprises. Nos spécialités incluent le nettoyage de bâtiments, de bureaux, de rues, de maisons, d'appartements, de vitrines et de jardins. Faites confiance à notre équipe pour des espaces impeccables et une propreté éclatante.
-                </p>
-            </div>
+        </nav>
+    </div>
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <img src="../image/logo.png" class="img-fluid" alt="Name_of_the_company">
         </div>
-        
-        <!-- <div class="headerContact d-flex flex-nowrap">
+        <div class="col-md-6 mb-4">
+            <p class="text">
+                Bienvenue chez Seck Service Nettoyage , votre partenaire dédié au nettoyage professionnel ! Nous vous
+                proposons une variété de services de nettoyage adaptés tant aux particuliers qu'aux entreprises. Nos
+                spécialités incluent le nettoyage de bâtiments, de bureaux, de rues, de maisons, d'appartements, de
+                vitrines et de jardins. Faites confiance à notre équipe pour des espaces impeccables et une propreté
+                éclatante.
+            </p>
+        </div>
+    </div>
+
+    <!-- <div class="headerContact d-flex flex-nowrap">
             <img src="../image/logo.png" class="img-fluid img-logoContact order-sm-first " alt="Name_of_the_company">
             <p class="text order-sm-last">
-                Bienvenue chez Seck Nettoyage Service, votre partenaire dédié au nettoyage professionnel ! Nous vous proposons une variété de services de nettoyage adaptés tant aux particuliers qu'aux entreprises. Nos spécialités incluent le nettoyage de bâtiments, de bureaux, de rues, de maisons, d'appartements, de vitrines et de jardins. Faites confiance à notre équipe pour des espaces impeccables et une propreté éclatante.
+                Bienvenue chez Seck Service Nettoyage , votre partenaire dédié au nettoyage professionnel ! Nous vous proposons une variété de services de nettoyage adaptés tant aux particuliers qu'aux entreprises. Nos spécialités incluent le nettoyage de bâtiments, de bureaux, de rues, de maisons, d'appartements, de vitrines et de jardins. Faites confiance à notre équipe pour des espaces impeccables et une propreté éclatante.
             </p>
         </div> -->
-        <div class="container">
-            <p class="texte">
-                <h2>Horaire:</h2>
-            <strong>Ouvert:</strong><br>
-            Lundi-vendredi: 07H-18h <br>
-            Samedi: 7h-12h <br>
-            <strong>Fermé</strong><br>
-            Dimanche
-                
-            </p>
-        </div>
-        
-        <div class="container">
-            <h2>Adresse:</h2>
-            <div id="map"></div>
-        </div>
-        <br>
-        <div class="header">
-            <img src="../image/WhatsApp Image 2023-12-05 at 12.05.59.jpeg" class="img-fluid img-logo" alt="car_of_the_company">
-        </div>
-        
+    <div class="container">
+        <p class="texte">
+        <h2>Horaire:</h2>
+        <strong>Ouvert:</strong><br>
+        Lundi-vendredi: 07H-18h <br>
+        Samedi: 7h-12h <br>
+        <strong>Fermé</strong><br>
+        Dimanche
+        <h2 class="mb-4">Contactez-nous</h2>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="currentColor"
+                d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.28-.28.67-.36 1.02-.25c1.12.37 2.32.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02l-2.2 2.2Z" />
+        </svg> <a href="tel:+41772260862">+41 77 226 08 62</a>
         <br><br>
-        <footer>
-            <p>
-                copyright(©) Seck Services Nettoyage 2024 tous droits reservés
-            </p>
-        </footer>
-        
-        <script src="./script.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    </body>
-    </html>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="currentColor" fill-opacity="0" d="M12 11L4 6H20L12 11Z">
+                <animate fill="freeze" attributeName="fill-opacity" begin="1s" dur="0.15s" values="0;0.3" />
+            </path>
+            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2">
+                <rect width="18" height="14" x="3" y="5" stroke-dasharray="64" stroke-dashoffset="64" rx="1">
+                    <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="64;0" />
+                </rect>
+                <path stroke-dasharray="24" stroke-dashoffset="24" d="M3 6.5L12 12L21 6.5">
+                    <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.4s" values="24;0" />
+                </path>
+            </g>
+        </svg> <a href="mailto:ssn@seckservicenettoyage.ch">ssn@seckservicenettoyage.ch</a>
+
+        </p>
+    </div>
+
+    <div class="container">
+        <h2>Adresse:</h2>
+        <div id="map"></div>
+    </div>
+    <br>
+    <div class="header">
+        <img src="../image/WhatsApp Image 2023-12-05 at 12.05.59.jpeg" class="img-fluid img-logo"
+            alt="car_of_the_company">
+    </div>
+
+    <br><br>
+    <footer>
+        <p>
+            copyright(©) Seck Services Nettoyage 2024 tous droits reservés
+        </p>
+    </footer>
+
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
