@@ -297,3 +297,24 @@ body{
 }
 
 
+.temp{
+  text-align: center;
+  color: green
+  
+ 
+}
+@keyframes clignotement {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.temp {
+  animation: clignotement 1s infinite;
+}

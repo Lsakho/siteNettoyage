@@ -8,4 +8,4 @@
 
         // Ajouter un marqueur à la carte
         L.marker([46.17887,6.12119]).addTo(mymap)
-            .bindPopup('Seck Sevice Nettoyage');
+            .bindPopup('Seck Sevice Nettoyage: Avenue Communes-Réunies 18 1212 Grand-Lancy');
